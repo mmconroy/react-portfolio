@@ -1,0 +1,36 @@
+.app-bar {
+  display: none;
+}
+
+header {
+  height: 56px;
+  width: 100%;
+}
+
+.name {
+  font-family: "SF Pro Display";
+  font-size: 1.2em;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  margin: 0;
+}
+
+@media (min-width: 1000px) {
+  header {
+    display: none;
+  }
+
+  .app-bar {
+    display: flex;
+    width: 100%;
+  }
+
+  .buttons_container > a {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 3rem;
+    font-family: "SF Pro Display";
+    font-size: 1.5rem;
+  }
+}

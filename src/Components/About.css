@@ -1,0 +1,40 @@
+.profile-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-family: "SF Pro Display";
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.1rem;
+}
+
+.about-text {
+  font-family: "SF Pro Display";
+  font-weight: lighter;
+  width: 100%;
+  /* padding: 0.5rem; */
+  font-size: 1rem;
+  text-align: start;
+  letter-spacing: 0.1rem;
+  align-self: center;
+}
+
+@media (min-width: 1000px) {
+  .about-me {
+    padding: 1rem;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
