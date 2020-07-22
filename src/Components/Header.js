@@ -1,10 +1,10 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuSharpIcon from "@material-ui/icons/MenuSharp";
 import AppBar from "@material-ui/core/AppBar";
-import Link from "@material-ui/core/Link";
 import linkedinlogo from "./img/linkedinlogo.png";
 import githublogo from "./img/githublogo.png";
 
@@ -41,38 +41,9 @@ export default function Header() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <MenuItem
-            onClick={handleClose}
-            style={{
-              fontFamily: "SF Pro Display",
-            }}
-          >
-            Home
-          </MenuItem>
-          <MenuItem
-            onClick={handleClose}
-            style={{
-              fontFamily: "SF Pro Display",
-            }}
-          >
-            UX Design
-          </MenuItem>
-          <MenuItem
-            onClick={handleClose}
-            style={{
-              fontFamily: "SF Pro Display",
-            }}
-          >
-            Coding
-          </MenuItem>
-          <MenuItem
-            onClick={handleClose}
-            style={{
-              fontFamily: "SF Pro Display",
-            }}
-          >
-            About Me
-          </MenuItem>
+          <Link to="/">Home</Link>
+          <Link to="/About">About Me</Link>
+          Contact
         </Menu>
         <div className="social__wrapper">
           <a href="https://www.linkedin.com/in/mmconroy" target="_blank">
@@ -88,17 +59,14 @@ export default function Header() {
       <div className="app-bar">
         <AppBar color="grey">
           <div className="buttons_container">
-            <Link variant="button" color="textPrimary" href="#">
+            <Link variant="button" color="textPrimary" href="/">
               Home
             </Link>
-            <Link variant="button" color="textPrimary" href="#">
-              UX Design
-            </Link>
-            <Link variant="button" color="textPrimary" href="#">
-              Coding
-            </Link>
-            <Link variant="button" color="textPrimary" href="#">
+            <Link variant="button" color="textPrimary" href="/About">
               About Me
+            </Link>
+            <Link to="/" variant="button" color="textPrimary" href="#">
+              Contact
             </Link>
           </div>
         </AppBar>

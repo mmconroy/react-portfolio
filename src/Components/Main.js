@@ -21,22 +21,24 @@ const projectList = [
       "Kenzie Academy UIE collaboration project. A responsive React app with styled components and vanilla CSS ",
     image1: hive_1,
     image2: hive_2,
+    URL: "https://the-hive-app.netlify.app",
   },
   {
     id: 2,
-    title: "Todo.ly",
-    description: "Responsive React app with styled components and vanilla CSS",
-    image1: todoly_1,
-    image2: todoly_2,
-  },
-
-  {
-    id: 3,
     title: "Indy Community Yoga",
     description:
-      "Freelance project. Indy Community Yoga. Responsive React website",
+      "Freelance project for Indy Community Yoga. Website design and build.",
     image1: indy_1,
     image2: indy_2,
+    URL: "https://www.indycommunityyoga.org/",
+  },
+  {
+    id: 3,
+    title: "Todo.ly",
+    description: "Responsive React app with styled components and vanilla CSS.",
+    image1: todoly_1,
+    image2: todoly_2,
+    URL: "https://mmconroy-todo-app.netlify.app/Todolist",
   },
 
   {
@@ -46,14 +48,16 @@ const projectList = [
       "Built a high fidelity HTML/CSS landing page from mockup with UI accuracy and using CSS development best practices.",
     image1: zenith_1,
     image2: zenith_2,
+    URL: "https://mmconroy-responsive-landing-page.netlify.app/",
   },
   {
     id: 5,
     title: "Responsive Grid Page",
     description:
-      "Created a responsive lo-fi design of a landing page for Kenzie Academy.",
+      "Created a vanilla HTML/CSS responsive lo-fi design of a landing page.",
     image1: kenzie_1,
     image2: kenzie_2,
+    URL: "https://mmconroy-css-grid-activity.netlify.app/",
   },
 ];
 
@@ -88,8 +92,10 @@ export class Main extends Component {
             <>
               <div className="card">
                 <StyledSpan>
-                  <img className="card-image" src={project.image2}></img>
-                  <p className="desc-text">{project.description}</p>
+                  <a href={project.URL}>
+                    <img className="card-image" src={project.image2}></img>
+                    <p className="desc-text">{project.description}</p>
+                  </a>
                 </StyledSpan>
               </div>
             </>
