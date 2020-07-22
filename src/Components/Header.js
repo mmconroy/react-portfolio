@@ -5,6 +5,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MenuSharpIcon from "@material-ui/icons/MenuSharp";
 import AppBar from "@material-ui/core/AppBar";
 import Link from "@material-ui/core/Link";
+import linkedinlogo from "./img/linkedinlogo.png";
+import githublogo from "./img/githublogo.png";
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -18,7 +20,7 @@ export default function Header() {
   };
 
   return (
-    <div>
+    <div className="header__wrapper">
       <header>
         <MenuSharpIcon
           aria-controls="simple-menu"
@@ -29,7 +31,7 @@ export default function Header() {
             height: "24px",
             position: "absolute",
             left: "16px",
-            top: "8px",
+            top: "22px",
           }}
         ></MenuSharpIcon>
         <Menu
@@ -72,6 +74,15 @@ export default function Header() {
             About Me
           </MenuItem>
         </Menu>
+        <div className="social__wrapper">
+          <a href="https://www.linkedin.com/in/mmconroy" target="_blank">
+            <img className="linkedin-img" src={linkedinlogo} alt="LinkedIn" />
+          </a>
+
+          <a href="https://github.com/mmconroy" target="_blank">
+            <img className="github-img" src={githublogo} alt="GitHub" />
+          </a>
+        </div>
         <p className="name">Matt Conroy</p>
       </header>
       <div className="app-bar">
