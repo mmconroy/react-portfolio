@@ -28,9 +28,58 @@
   align-self: center;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 750px) {
   .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 1rem;
+  }
+  .image__wrapper {
+    width: 75%;
+  }
+
+  .title__wrapper {
+    width: 75%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 999px) {
+  .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .image__wrapper {
+    width: 25%;
+    padding: 1rem;
+  }
+
+  .title__wrapper {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: auto;
   }
 
   .about-text {

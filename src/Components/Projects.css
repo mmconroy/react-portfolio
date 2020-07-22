@@ -1,0 +1,45 @@
+.cards__wrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cards__wrapper > h2 {
+  font-family: "SF Pro Display";
+  font-size: 1.2em;
+}
+
+.link-text {
+  color: black;
+  position: absolute;
+  top: 4rem;
+  left: 3.7rem;
+}
+
+.overlay {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.7)
+  );
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 2rem;
+}
+
+.github-logo {
+  height: 56px;
+  width: 56px;
+  position: absolute;
+  top: 6.5rem;
+  left: 7rem;
+}
+
+@media (min-width: 700px) {
+  .cards__wrapper {
+    display: flex;
+  }
+}
