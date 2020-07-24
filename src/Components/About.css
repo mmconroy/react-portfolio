@@ -1,13 +1,8 @@
-.profile-img {
+.profile-image {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
   align-self: center;
-}
-.about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .title {
   font-family: "SF Pro Display";
@@ -15,28 +10,16 @@
   text-align: center;
   width: 100%;
   letter-spacing: 0.1rem;
-}
-
-.about-text {
-  font-family: "SF Pro Display";
-  font-weight: lighter;
-  width: 100%;
-  /* padding: 0.5rem; */
-  font-size: 1rem;
-  text-align: start;
-  letter-spacing: 0.1rem;
-  align-self: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 @media (min-width: 750px) {
-  .about-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .profile-image {
+    width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
   }
+
   .image__wrapper {
     width: 75%;
   }
@@ -48,21 +31,11 @@
   .title {
     font-size: 3rem;
   }
-
-  .profile-img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media (min-width: 999px) {
-  .about-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
+  .profile-image {
+    display: none;
   }
   .image__wrapper {
     width: 25%;
@@ -80,10 +53,5 @@
   .profile-img {
     width: 100%;
     height: auto;
-  }
-
-  .about-text {
-    font-size: 1.5rem;
-    padding: 0;
   }
 }

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import profile from "./img/profile.jpeg";
 import "./About.css";
+import { StyledAboutMe } from "./About.styled";
+import { StyledAboutText } from "./AboutText.styled";
 
 export class About extends Component {
   render() {
     return (
       <div>
-        <main className="about-me">
+        <StyledAboutMe>
           <div className="image__wrapper">
             <img src={profile} alt="" className="profile-img" />
           </div>
@@ -17,7 +19,7 @@ export class About extends Component {
             </h1>
           </div>
           <div className="text__wrapper">
-            <p className="about-text">
+            <StyledAboutText>
               I was born and raised a
               <a
                 href="https://en.wikipedia.org/wiki/Hoosier"
@@ -31,14 +33,14 @@ export class About extends Component {
                 Hoosier
               </a>
               *. I've always taken that as a compliment.{" "}
-            </p>
-            <p className="about-text">
+            </StyledAboutText>
+            <StyledAboutText>
               Like most midwesterners, I want to work hard and keep those I care
               about happy and healthy. This doesn't make me particularly neat or
               special but it is the ideal I strive for.
-            </p>
+            </StyledAboutText>
 
-            <p className="about-text">
+            <StyledAboutText>
               {" "}
               How I became a UX Engineer is the result of years of following my
               ideals but never really taking my own passions into account.
@@ -47,27 +49,27 @@ export class About extends Component {
               by just being here. And while I am incredibly lucky to be in that
               position, I also have an obligation to use my privilege for good
               and for others. That obligation follows me in everything I do.
-            </p>
-            <p className="about-text">
+            </StyledAboutText>
+            <StyledAboutText>
               Being a designer who also codes allows me to be a part of the
               entire user experience. I firmly believe that using human-centered
               design is the only way to create products for{" "}
               <strong style={{ textDecoration: "underline" }}>everyone</strong>.
-            </p>
-            <p className="about-text">
+            </StyledAboutText>
+            <StyledAboutText>
               In my spare time, I enjoy biking, reading, volunteering,
               practicing yoga, Crystal Palace Football Club, and trying new
               craft beers. You can find my professional resume{" "}
               <a
-                href="https://drive.google.com/file/d/1iNUXzAlEw-vsYAldxXStZo4LjZ_W6LYJ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ltXKmmn8R1fKG1uJUNPeUElaGKM_GIto/"
                 target="_blank"
               >
                 here
               </a>
               .
-            </p>
+            </StyledAboutText>
           </div>
-        </main>
+        </StyledAboutMe>
       </div>
     );
   }

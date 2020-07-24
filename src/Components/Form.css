@@ -1,0 +1,120 @@
+.form-wrapper {
+  margin-bottom: 56px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid #d6d9dc; */
+  width: 100%;
+  padding: 16px;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper select,
+.form-wrapper textarea {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-family: "SF Pro Display";
+}
+
+.form-wapper label {
+  margin-bottom: 15px;
+}
+
+.form-wrapper input[type="text"]:invalid,
+.form-wrapper input[type="email"]:invalid {
+  border: 1px solid #d55c5f;
+  color: #d55c5f;
+  box-shadow: none;
+}
+
+.menu-row {
+  width: 100%;
+  font-size: 14px;
+  -webkit-appearance: none;
+}
+
+#comments {
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  width: 100%;
+  color: #000000;
+}
+
+.contact-row {
+  width: 100%;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.field {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.contact-row textarea {
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  width: fit-content;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.contact-row button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  /* font-weight: bold; */
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#comments {
+  font-family: "SF Pro Display";
+  font-size: 16px;
+}
+
+.contact-row button:hover {
+  background-color: #343434;
+}
+
+.contact-row button:active {
+  background-color: white;
+  color: #000000;
+}
+
+@media (min-width: 700px) {
+  .form-wrapper {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .form-wrapper label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .form-wrapper {
+    width: 40%;
+  }
+}
