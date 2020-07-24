@@ -26,7 +26,7 @@ function Main(props) {
       id: 1,
       title: "The Hive",
       description:
-        "Kenzie Academy UIE collaboration project. A responsive React app with styled components and vanilla CSS. ",
+        "Kenzie Academy UIE collaboration project. A responsive React app with styled components and vanilla CSS. The case study to this project can be found in the header. ",
       image1: hive_1,
       image2: hive_2,
       displayedImage: hive_1,
@@ -36,7 +36,7 @@ function Main(props) {
       id: 2,
       title: "Indy Community Yoga",
       description:
-        "Freelance project for Indy Community Yoga. Website design and build.",
+        "Freelance project for Indy Community Yoga done in July 2020. Website design and build.",
       image1: indy_1,
       image2: indy_2,
       displayedImage: indy_1,
@@ -47,7 +47,7 @@ function Main(props) {
       id: 3,
       title: "Todo.ly",
       description:
-        "Responsive React app with styled components and vanilla CSS.",
+        "Created a basic funcationing todo list using JavaScript. Responsive React app with styled components and vanilla CSS.",
       image1: todoly_1,
       image2: todoly_2,
       displayedImage: todoly_1,
