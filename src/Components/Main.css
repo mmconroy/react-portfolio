@@ -22,46 +22,76 @@ body {
   align-items: center;
 }
 
-.content {
-  margin-top: 3rem;
+.hero {
   width: 100%;
-  height: 30vh;
+  height: 77vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  background-image: url("./img/hero-image.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.content > h1 {
-  font-family: "SF Pro Display Bold";
-  margin: 0;
+.section-title {
+  font-family: "New York";
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
 }
 
-.wave {
-  width: 64px;
-  height: 64px;
-}
-
-.main-text {
+.hero-text {
   font-family: "SF Pro Display";
-  font-size: 1rem;
+  font-size: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  color: white;
+  width: 80%;
 }
 
-.linkedin-img:hover {
-  opacity: 0.5;
-  cursor: pointer;
+@media (min-width: 699px) {
+  .hero {
+    height: 92vh;
+  }
 }
 
-.github-img:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
+@media (min-width: 1025px) {
+  .hero {
+    margin-bottom: 8rem;
+    height: 77vh;
+  }
 
-@media (min-width: 700px) {
-  .content,
-  .main-text {
-    font-size: 2rem;
+  .section-title {
+    width: 100%;
+    text-align: center;
+    font-family: "New York";
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 2rem;
+  }
+
+  .linkedin-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .github-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .about__container {
+    height: 40%;
+    width: 100%;
+    background-image: url("./img/profile.jpeg");
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

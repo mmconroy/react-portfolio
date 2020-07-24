@@ -1,68 +1,128 @@
-.app-bar {
-  display: none;
-}
-
-header {
-  height: 56px;
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 56px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .name {
+  z-index: 999;
+  position: fixed;
+  top: 16px;
+  right: 16px;
   font-family: "SF Pro Display";
   font-size: 1.2em;
-  position: absolute;
-  top: 22px;
-  right: 16px;
   margin: 0;
 }
 
-.social__wrapper {
-  width: 100%;
-  height: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 .linkedin-img {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 999;
   width: 24px;
   height: 24px;
   object-fit: contain;
-  /* position: absolute;
-  top: 8px;
-  left: 148px; */
-  padding: 4px;
 }
 
 .github-img {
+  position: fixed;
+  top: 16px;
+  left: 48px;
+  z-index: 999;
   width: 24px;
   height: 24px;
   object-fit: contain;
-  /* position: absolute;
-  top: 8px;
-  left: 180px; */
-  padding: 4px;
+}
+
+.uxfolio-text {
+  display: none;
+}
+
+.uxfolio-img {
+  position: fixed;
+  top: 10px;
+  left: 80px;
+  z-index: 999;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+@media (min-width: 699px) {
+  .uxfolio-text {
+    display: inline;
+    z-index: 999;
+    position: fixed;
+    top: 16px;
+    left: 96px;
+    font-family: "SF Pro Display";
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .uxfolio-img {
+    position: fixed;
+    top: 8px;
+    left: 340px;
+    z-index: 999;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: 1025px) {
-  header {
-    display: none;
+  nav {
+    height: 112px;
+  }
+  .linkedin-img {
+    top: 32px;
+    left: 32px;
+    width: 48px;
+    height: 48px;
   }
 
-  .app-bar {
-    display: flex;
-    width: 100%;
+  .github-img {
+    top: 32px;
+    left: 96px;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
   }
 
-  .buttons_container > a {
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 3rem;
+  .name {
+    font-size: 2rem;
+    top: 36px;
+    right: 32px;
+  }
+
+  .uxfolio-text {
+    z-index: 999;
+    position: fixed;
+    top: 36px;
+    left: 164px;
     font-family: "SF Pro Display";
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .uxfolio-img {
+    position: fixed;
+    top: 22px;
+    left: 565px;
+    z-index: 999;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
   }
 }
