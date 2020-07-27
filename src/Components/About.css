@@ -6,7 +6,7 @@
 }
 .title {
   font-family: "SF Pro Display";
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   width: 100%;
   letter-spacing: 0.1rem;
@@ -16,20 +16,23 @@
 
 @media (min-width: 750px) {
   .profile-image {
-    width: 100%;
-    align-items: center;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
   }
 
   .image__wrapper {
-    width: 75%;
+    width: 100%;
   }
 
   .title__wrapper {
-    width: 75%;
+    width: 100%;
   }
 
   .title {
-    font-size: 3rem;
+    width: 100%;
+    font-size: 2rem;
   }
 }
 
@@ -43,11 +46,12 @@
   }
 
   .title__wrapper {
-    width: 50%;
+    width: 100%;
   }
 
   .title {
-    font-size: 3rem;
+    width: 100%;
+    font-size: 2rem;
   }
 
   .profile-img {

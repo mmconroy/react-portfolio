@@ -189,15 +189,6 @@ function Main(props) {
           </div>
         </StyledAboutMe>
       </div>
-      <div className="social__wrapper">
-        <a href="https://www.linkedin.com/in/mmconroy" target="_blank">
-          <img className="linkedin-img" src={linkedinlogo} alt="LinkedIn" />
-        </a>
-
-        <a href="https://github.com/mmconroy" target="_blank">
-          <img className="github-img" src={githublogo} alt="GitHub" />
-        </a>
-      </div>
       <StyledAboutText style={{ padding: "1rem" }}>
         Looking to get in touch? Please use the form below.
       </StyledAboutText>

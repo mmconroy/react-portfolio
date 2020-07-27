@@ -8,10 +8,10 @@ justify-content: center;
 @media (min-width: 750px){
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem;
+    width: 100%;
 }
 @media (min-width: 999px){
     display: flex;

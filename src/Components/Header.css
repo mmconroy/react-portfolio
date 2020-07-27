@@ -83,46 +83,46 @@ nav {
 
 @media (min-width: 1025px) {
   nav {
-    height: 112px;
+    height: 5rem;
   }
   .linkedin-img {
-    top: 32px;
+    top: 24px;
     left: 32px;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
 
   .github-img {
-    top: 32px;
+    top: 24px;
     left: 96px;
-    width: 48px;
-    height: 48px;
-    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
   }
 
   .name {
-    font-size: 2rem;
-    top: 36px;
+    font-size: 1.4rem;
+    top: 24px;
     right: 32px;
   }
 
   .uxfolio-text {
     z-index: 999;
     position: fixed;
-    top: 36px;
+    top: 24px;
     left: 164px;
     font-family: "SF Pro Display";
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 0;
   }
 
   .uxfolio-img {
     position: fixed;
-    top: 22px;
-    left: 565px;
+    top: 16px;
+    left: 450px;
     z-index: 999;
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
   }
 }

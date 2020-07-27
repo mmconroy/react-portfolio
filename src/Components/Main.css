@@ -38,9 +38,10 @@ body {
 }
 
 .section-title {
-  font-family: "New York";
+  font-family: "SF Pro Display";
   font-size: 2rem;
   color: black;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   text-align: center;
@@ -48,11 +49,15 @@ body {
 
 .hero-text {
   font-family: "SF Pro Display";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   color: white;
   width: 80%;
+}
+
+.desc-text {
+  font-size: 1rem;
 }
 
 @media (min-width: 699px) {
@@ -76,15 +81,17 @@ body {
     margin-bottom: 2rem;
   }
 
-  .linkedin-img:hover {
+  .linkedin-img:hover,
+  .github-img:hover,
+  .uxfolio-img:hover {
     opacity: 0.5;
     cursor: pointer;
   }
 
-  .github-img:hover {
+  /* .github-img:hover {
     opacity: 0.5;
     cursor: pointer;
-  }
+  } */
   .about__container {
     height: 40%;
     width: 100%;
@@ -93,5 +100,6 @@ body {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 8rem;
   }
 }

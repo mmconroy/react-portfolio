@@ -5,7 +5,7 @@ display: none;
 }
 @media (min-width: 999px){
     width: 100%;
-    height 2rem;
+    height 1.3rem;
 }
 
 `;
