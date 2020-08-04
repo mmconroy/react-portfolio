@@ -109,7 +109,7 @@ nav {
   .uxfolio-text {
     z-index: 999;
     position: fixed;
-    top: 24px;
+    top: 32px;
     left: 164px;
     font-family: "SF Pro Display";
     font-size: 1.4rem;
@@ -118,7 +118,7 @@ nav {
 
   .uxfolio-img {
     position: fixed;
-    top: 16px;
+    top: 24px;
     left: 450px;
     z-index: 999;
     width: 48px;
