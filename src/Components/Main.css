@@ -24,13 +24,14 @@ body {
 
 .hero {
   width: 100%;
-  height: 77vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("./img/hero-image.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/hero-image3.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,11 +50,12 @@ body {
 
 .hero-text {
   font-family: "SF Pro Display";
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  padding-top: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   color: white;
-  width: 80%;
+  width: 60%;
 }
 
 .desc-text {

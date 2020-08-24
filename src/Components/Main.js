@@ -52,7 +52,7 @@ function Main(props) {
       image2: todoly_2,
       displayedImage: todoly_1,
 
-      URL: "https://mmconroy-todo-app.netlify.app/Todolist",
+      URL: "https://mmconroy-todo-app.netlify.app/",
     },
 
     {

@@ -61,7 +61,7 @@ export class About extends Component {
               practicing yoga, Crystal Palace Football Club, and trying new
               craft beers. You can find my professional resume{" "}
               <a
-                href="https://drive.google.com/file/d/12DiXra8EqYVqsDtCv4Ig4Dvibr5jTdUm/view?usp=sharing"
+                href="https://drive.google.com/file/d/1xE57gHITsvo_ZeLbU61nw3msSNwH5MEX/view?usp=sharing"
                 target="_blank"
               >
                 here
