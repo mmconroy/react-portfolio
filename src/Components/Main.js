@@ -97,7 +97,7 @@ function Main(props) {
     <div>
       <main className="hero">
         <p className="hero-text">
-          I'm Matt, an empathetic UI Developer who's passionate about people and
+          I'm Matt, an empathetic UX Engineer who's passionate about people and
           solving problems. I love taking beautiful designs and turning them
           into beautiful code. I'm proficient in HTML, CSS, JavaScript and
           React.
