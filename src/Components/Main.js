@@ -179,7 +179,7 @@ function Main(props) {
               practicing yoga, Crystal Palace Football Club, and trying new
               craft beers. You can find my professional resume{" "}
               <a
-                href="https://drive.google.com/file/d/1ltXKmmn8R1fKG1uJUNPeUElaGKM_GIto/"
+                href="https://drive.google.com/file/d/15Ok4JzKkTbHcoAVih-as5KtnFvBUdDzH/view?usp=sharing"
                 target="_blank"
               >
                 here
