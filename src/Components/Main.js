@@ -169,7 +169,7 @@ function Main(props) {
               and for others. That obligation follows me in everything I do.
             </StyledAboutText>
             <StyledAboutText>
-              Being a designer who also codes allows me to be a part of the
+              Being a coder who also designs allows me to be a part of the
               entire user experience. I firmly believe that using human-centered
               design is the only way to create products for{" "}
               <strong style={{ textDecoration: "underline" }}>everyone</strong>.
