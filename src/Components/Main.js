@@ -11,14 +11,15 @@ import todoly_1 from "./img/todoly-1.png";
 import hive_1 from "./img/the-hive-1.png";
 import indy_1 from "./img/icy-1.png";
 import zenith_1 from "./img/zenith-1.png";
-import kenzie_1 from "./img/kenzie-1.png";
 import todoly_2 from "./img/todoly-2.png";
 import hive_2 from "./img/the-hive-2.png";
 import indy_2 from "./img/icy-2.png";
 import zenith_2 from "./img/zenith-2.png";
-import kenzie_2 from "./img/kenzie-2.png";
-import linkedinlogo from "./img/linkedinlogo.png";
-import githublogo from "./img/githublogo.png";
+
+import react_1 from "./img/react-1.png";
+import react_2 from "./img/react-2.png";
+import CardActions from "@material-ui/core/CardActions";
+import Button from "@material-ui/core/Button";
 
 function Main(props) {
   const [projectList, setProjectList] = useState([
@@ -26,56 +27,59 @@ function Main(props) {
       id: 1,
       title: "The Hive",
       description:
-        "Kenzie Academy UIE collaboration project. A responsive React app with styled components and vanilla CSS. The case study to this project can be found in the header. ",
+        "Responsive React app with styled components and vanilla CSS. ",
       image1: hive_1,
       image2: hive_2,
       displayedImage: hive_1,
-      URL: "https://the-hive-app.netlify.app",
+      projectURL: "https://the-hive-app.netlify.app",
+      githubURL: "https://github.com/KA-Asyncing-Ship/KA-Capstone",
     },
     {
       id: 2,
       title: "Indy Community Yoga",
       description:
-        "Freelance project for Indy Community Yoga done in July 2020. Website design and build.",
+        "Design, maintenance, and setup of WordPress site with custom HTML & CSS.",
       image1: indy_1,
       image2: indy_2,
       displayedImage: indy_1,
 
-      URL: "https://www.indycommunityyoga.org/",
+      projectURL: "https://www.indycommunityyoga.org/",
+      githubURL: "",
     },
     {
       id: 3,
       title: "Todo.ly",
       description:
-        "Created a basic funcationing todo list using JavaScript. Responsive React app with styled components and vanilla CSS.",
+        "Basic functioning . Responsive React app with styled components & vanilla CSS.",
       image1: todoly_1,
       image2: todoly_2,
       displayedImage: todoly_1,
 
-      URL: "https://mmconroy-todo-app.netlify.app/",
+      projectURL: "https://mmconroy-todo-app.netlify.app/",
+      githubURL: "https://github.com/mmconroy/todo-app",
     },
 
     {
       id: 4,
       title: "Landing Page Mockup",
-      description:
-        "Built a high fidelity HTML/CSS landing page from mockup with UI accuracy and using CSS development best practices.",
+      description: "High fidelity HTML/CSS landing page from mockup.",
       image1: zenith_1,
       image2: zenith_2,
       displayedImage: zenith_1,
-      URL: "https://mmconroy-responsive-landing-page.netlify.app/",
+      projectURL: "https://mmconroy-responsive-landing-page.netlify.app/",
+      githubURL: "https://github.com/mmconroy/zenith-landing-page",
     },
-    // {
-    //   id: 5,
-    //   title: "Responsive Grid Page",
-    //   description:
-    //     "Created a vanilla HTML/CSS responsive lo-fi design of a landing page.",
-    //   image1: kenzie_1,
-    //   image2: kenzie_2,
-    //   displayedImage: kenzie_1,
+    {
+      id: 5,
+      title: "React Directory App",
+      description: "React app with search queries, API calls, & hooks.",
+      image1: react_1,
+      image2: react_2,
+      displayedImage: react_1,
 
-    //   URL: "https://mmconroy-css-grid-activity.netlify.app/",
-    // },
+      projectURL: "https://mmconroy-react-directory.netlify.app/",
+      githubURL: "https://github.com/mmconroy/react-directory-app",
+    },
   ]);
 
   const changeBgImage = (id) => {
@@ -121,6 +125,26 @@ function Main(props) {
                     ></img>
                   </a>
                   <p className="desc-text">{project.description}</p>
+                  <CardActions>
+                    <Button
+                      target="_blank"
+                      href={project.githubURL}
+                      variant="outlined"
+                      style={{ marginTop: "1rem" }}
+                      size="small"
+                    >
+                      View on GitHub
+                    </Button>
+                    <Button
+                      target="_blank"
+                      href={project.projectURL}
+                      variant="outlined"
+                      style={{ marginTop: "1rem" }}
+                      size="small"
+                    >
+                      View on Web
+                    </Button>
+                  </CardActions>
                 </StyledSpan>
               </StyledCard>
             </>
@@ -169,7 +193,7 @@ function Main(props) {
               and for others. That obligation follows me in everything I do.
             </StyledAboutText>
             <StyledAboutText>
-              Being a designer who also codes allows me to be a part of the
+              Being a coder who also designs allows me to be a part of the
               entire user experience. I firmly believe that using human-centered
               design is the only way to create products for{" "}
               <strong style={{ textDecoration: "underline" }}>everyone</strong>.
@@ -218,8 +242,10 @@ function Main(props) {
             </label>
             <textarea id="comments" name="comments"></textarea>
           </div>
-          <div class="contact-row">
-            <button type="Submit">Submit</button>
+          <div>
+            <Button variant="outlined" type="Submit" size="small">
+              Submit
+            </Button>
           </div>
         </form>
       </div>
